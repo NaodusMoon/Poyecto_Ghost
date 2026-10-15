@@ -1,0 +1,15 @@
+export const projects = [
+  { title: 'Reseña de vida', category: 'Personal', label: 'Nuestra historia empieza aquí', file: 'historia de vida.pptx', icon: '✿' },
+  { title: 'Hoja de vida', category: 'Personal', label: 'Todo lo que nos hace únicos', file: 'hoja de vida.pdf', icon: '↗' },
+  { title: 'Realidad virtual y aumentada', category: 'Informática', label: 'Más allá de lo que vemos', file: 'infografía de Rv y RA.pdf', icon: '◎' },
+  { title: 'Práctica de realidad aumentada', category: 'Informática', label: 'El mundo, con otra capa', file: 'practica realidad aumentada.jpg', icon: '✳' },
+  { title: 'Sistema experto', category: 'Informática', label: 'Ideas que encuentran respuestas', file: 'sistema experto.pptx', icon: '⤴' },
+  { title: 'Inteligencia artificial', category: 'Informática', label: 'Una mirada al futuro', file: 'folleto inteligencia artificial.pdf', icon: '✦' },
+  { title: 'Modelo de inteligencia artificial', category: 'Informática', label: 'De la idea al modelo', file: 'modelo de inteligencia artificial.pptx', icon: '◈' },
+  { title: 'Robótica', category: 'Informática', label: 'Construir, probar, imaginar', file: 'trabajo robotica.pdf', icon: '⌘' },
+  { title: 'Cómic de robótica', category: 'Informática', label: 'Tecnología entre viñetas', file: 'comic robotica.pdf', icon: '☆' },
+  { title: 'Mapa conceptual HTML', category: 'Informática', label: 'Así se conecta la web', file: 'mapa html.pdf', icon: '↔' },
+  { title: 'Temas de interés', category: 'Inspiración', label: 'Lo que nos mueve', file: 'tema de interes.pptx', icon: '♡' },
+  { title: 'Prom 2026', category: 'Recuerdos', label: 'Nuestra cápsula del tiempo', file: 'video prom2026.pptx', icon: '❋' },
+  { title: 'Proyecto de vida', category: 'Inspiración', label: 'Todavía nos queda tanto', file: 'proyecto de vida.pdf', icon: '↗' },
+];
