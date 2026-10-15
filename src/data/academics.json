@@ -1,0 +1,52 @@
+[
+  {
+    "id": "dprc",
+    "title": "DPRC",
+    "mode": "carousel",
+    "pages": [
+      "/academico/dprc/001.webp",
+      "/academico/dprc/002.webp",
+      "/academico/dprc/003.webp",
+      "/academico/dprc/004.webp",
+      "/academico/dprc/005.webp",
+      "/academico/dprc/006.webp",
+      "/academico/dprc/007.webp"
+    ]
+  },
+  {
+    "id": "etica",
+    "title": "Ética",
+    "mode": "carousel",
+    "pages": [
+      "/academico/etica/001.webp"
+    ]
+  },
+  {
+    "id": "ingles",
+    "title": "Inglés",
+    "mode": "slides",
+    "pages": [
+      "/academico/ingles/001.webp",
+      "/academico/ingles/002.webp",
+      "/academico/ingles/003.webp",
+      "/academico/ingles/004.webp",
+      "/academico/ingles/005.webp",
+      "/academico/ingles/006.webp",
+      "/academico/ingles/007.webp"
+    ]
+  },
+  {
+    "id": "educacion-fisica",
+    "title": "Educación Física",
+    "mode": "slides",
+    "pages": [
+      "/academico/educacion-fisica/001.webp",
+      "/academico/educacion-fisica/002.webp",
+      "/academico/educacion-fisica/003.webp",
+      "/academico/educacion-fisica/004.webp",
+      "/academico/educacion-fisica/005.webp",
+      "/academico/educacion-fisica/006.webp",
+      "/academico/educacion-fisica/007.webp"
+    ]
+  }
+]

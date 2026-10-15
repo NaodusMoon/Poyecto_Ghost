@@ -1,0 +1,10 @@
+from pathlib import Path
+p=Path('src/components/ProjectLibrary.jsx');s=p.read_text(encoding='utf-8-sig')
+s=s.replace('const current = selected && files[selected.title];','const current = selected && (files[selected.title] || selected.asset);')
+s=s.replace("files[p.title] ? 'Vista previa local añadida' : 'Archivo pendiente'","files[p.title] ? 'Vista previa local añadida' : p.asset ? 'Disponible · Ver contenido' : 'Archivo pendiente'")
+s=s.replace('<video className="preview" src={current.url} controls/>','<video className="preview personal-video" src={current.url} controls playsInline preload="metadata"/>')
+s=s.replace("{current.type === 'application/pdf' && <iframe", "{current.type === 'application/pdf' && selected.asset && !files[selected.title] ? <img className=\"document-page\" src=\"/media/personal/hoja-1.png\" alt=\"Hoja de vida, página 1\"/> : current.type === 'application/pdf' && <iframe")
+s=s.replace('Vista previa local. Los archivos se conservan durante esta sesión; no se suben a un servidor.','Los archivos originales de Mi historia están integrados en la web. Los archivos de reemplazo y de apoyo seleccionados aquí son vistas previas temporales.')
+p.write_text(s,encoding='utf-8')
+p=Path('src/styles/global.css');p.write_text(p.read_text(encoding='utf-8-sig')+'\n.document-page{display:block;width:100%;height:auto;margin:24px 0;border-radius:16px;border:1px solid #b9cdd3}.personal-video{max-height:65vh;background:#123e4b}\n',encoding='utf-8')
+p=Path('REVISION_ENTREGA.md');s=p.read_text(encoding='utf-8-sig').replace('Hoja de vida real y video real; no se inventaron datos personales','Nada: hoja de vida PDF y video MP4 integrados permanentemente').replace('## Archivos integrados permanentemente','## Archivos integrados permanentemente\n\n- Hoja de vida: PDF original y página renderizada dentro de la web.\n- Historia de vida: video MP4 original con controles de reproducción.');p.write_text(s,encoding='utf-8')

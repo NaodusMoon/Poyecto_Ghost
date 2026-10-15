@@ -15,10 +15,10 @@ export default function FlowerScene() {
     const light = new THREE.DirectionalLight(0xffffff, 4); light.position.set(3, 5, 6); scene.add(light);
     const flower = new THREE.Group(); scene.add(flower);
     const petalGeo = new THREE.SphereGeometry(.68, 32, 24);
-    const petalMat = new THREE.MeshStandardMaterial({ color: '#e8ec9a', roughness: .28, metalness: .08 });
+    const petalMat = new THREE.MeshStandardMaterial({ color: '#b7dce7', roughness: .28, metalness: .08 });
     for (let i = 0; i < 8; i++) { const a = i * Math.PI / 4; const petal = new THREE.Mesh(petalGeo, petalMat); petal.position.set(Math.cos(a) * 1.1, Math.sin(a) * 1.1, 0); petal.scale.set(1.05, .58, .35); petal.rotation.z = a; flower.add(petal); }
     const centerGeo = new THREE.SphereGeometry(.57, 32, 24);
-    const centerMat = new THREE.MeshStandardMaterial({ color: '#c6a356', roughness: .4 });
+    const centerMat = new THREE.MeshStandardMaterial({ color: '#d5a86b', roughness: .4 });
     const center = new THREE.Mesh(centerGeo, centerMat); center.scale.z = .55; center.position.z = .2; flower.add(center);
     let target = 0; const onMove = e => { target = (e.clientX / window.innerWidth - .5) * .7; };
     window.addEventListener('pointermove', onMove);
