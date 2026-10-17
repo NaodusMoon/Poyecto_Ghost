@@ -4,8 +4,9 @@ import FlowerScene from './components/FlowerScene';
 import ProjectLibrary from './components/ProjectLibrary';
 import FutureCorner from './components/FutureCorner';
 import ChapterMap from './components/ChapterMap';
+import Marquee from './components/Marquee';
 
-const photo = '/media/personal/portada-prom.jpg';
+const photo = '/media/personal/portada-prom-completa.jpg';
 export default function App() {
   const [menu, setMenu] = useState(false); const [audio, setAudio] = useState(false); 
   const music = useRef(null); const videoInput = useRef(null); const audioInput = useRef(null);
@@ -16,12 +17,12 @@ export default function App() {
     <main><section className="hero" id="inicio"><div className="hero-copy"><div className="edition"><span className="dot"/> ANUARIO DIGITAL <span>VOLUMEN 01 — 2026</span></div><h1>Coincidir,<br/>crecer,<br/><em>florecer</em><span className="title-star">✧</span></h1><p>Fuimos un salón; nos volvimos una historia<br/>Este es nuestro pequeño universo de ideas,<br className="desktop"/> sueños y momentos que se quedan</p><a className="button" href="#proyectos">Explora nuestra prom <ArrowUpRight size={20}/></a><div className="hero-bottom"><span>PARA TODO LO QUE VIENE</span><a href="#nosotros" aria-label="Descubrir más"><ArrowDown size={18}/></a></div></div>
       <div className="hero-collage"><div className="vertical-japanese">思い出が、花になる。</div><div className="photo-frame"><div className="portrait-crop"><img src={photo} alt="Tres compañeras en un mundo de fantasía, portada del anuario Prom 2026"/></div><div className="photo-overlay">the best is<br/><i>yet to bloom</i></div><span className="photo-caption">MI HISTORIA / PROM 2026</span></div><div className="round-sticker">UN MISMO<br/><b>2026</b><br/>MIL CAMINOS</div><div className="flower-wrap"><FlowerScene/></div><span className="handwritten">lo bonito de<br/>crecer juntos ↗</span><div className="prom-ticket"><span>PROM<br/><strong>20<br/>26</strong></span><span className="ticket-side">EDICIÓN IRREPETIBLE ✳</span></div><div className="collage-foot">木漏れ日 <span>LA LUZ QUE SE FILTRA ENTRE LOS ÁRBOLES</span></div></div>
     </section>
-    <div className="marquee" aria-label="Nuestra historia apenas comienza"><div>{Array.from({length: 4}, (_, i) => <span key={i}>NUESTRA HISTORIA APENAS COMIENZA <b>✳</b> PROM 2026 <b>✳</b> KEEP BLOOMING <b>✳</b> </span>)}</div></div>
-    <section className="intro section" id="nosotros"><div><span className="eyebrow">BIENVENIDA / HOLA, SOMOS LA PROM 2026</span><h2>Hay etapas que terminan;<br/><em>y otras que se llevan dentro</em></h2></div><div className="intro-text"><span className="mini-flower">✳</span><p>Bienvenidos a nuestro anuario digital; aquí viven nuestros proyectos, las cosas que aprendimos y todo eso que nos hizo crecer juntos</p><p>Komorebi es esa luz que se cuela entre los árboles; para nosotros, también son las personas y los pequeños momentos que hicieron brillar esta etapa</p><span className="signature">Con cariño, la prom ♡</span></div></section>
+    <Marquee/>
+    <section className="intro section" id="nosotros"><div><h2>Hay etapas que terminan;<br/><em>y otras que se llevan dentro</em></h2></div><div className="intro-text"><span className="mini-flower">✳</span><p>Bienvenidos a nuestro anuario digital; aquí viven nuestros proyectos, las cosas que aprendimos y todo eso que nos hizo crecer juntos</p><p>Komorebi es esa luz que se cuela entre los árboles; para nosotros, también son las personas y los pequeños momentos que hicieron brillar esta etapa</p><span className="signature">Con cariño, la prom ♡</span></div></section>
     <ChapterMap/>
     <ProjectLibrary/>
     <FutureCorner/>
-    <section className="closing"><span>EL FUTURO NOS QUEDA BONITO</span><h2>Sigamos <em>floreciendo</em> ✳</h2><a href="#inicio">Volver al comienzo ↗</a></section></main>
+    <section className="closing"><h2>Sigamos <em>floreciendo</em> ✳</h2><a href="#inicio">Volver al comienzo ↗</a></section><Marquee/></main>
     <footer><a href="#" className="brand">✳ KOMOREBI</a><span>UN ARCHIVO DE LO QUE FUIMOS; UNA PISTA DE LO QUE SEREMOS</span><small>PROM 2026 ©</small></footer>
     <button className="music-control" onClick={toggleMusic} aria-label={audio ? 'Pausar música' : 'Seleccionar o reproducir música'}>{audio ? <Volume2 size={16}/> : <VolumeX size={16}/>}<span>{audio ? 'Música encendida' : 'Ponle soundtrack'}</span><i/></button><input ref={audioInput} hidden type="file" accept="audio/*" onChange={playMusic}/>
 
