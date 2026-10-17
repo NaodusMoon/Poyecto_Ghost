@@ -1,24 +1,45 @@
 # KOMOREBI · Prom 2026
 
-Anuario digital en React + Vite + Three.js.
+Anuario digital en React, Vite y Three.js; identidad en azul petróleo, crema y cobre
 
-## Ejecutar
+## Desarrollo
 
-npm install
+```sh
+npm ci
 npm run dev
-
-## Producción
-
-npm run build
-npm run preview
+```
 
 ## Organización
 
-- src/components: escena 3D y biblioteca interactiva.
-- src/data/projects.js: títulos, categorías y nombres de los 13 trabajos originales.
-- src/styles/global.css: identidad visual y diseño responsive.
-- public/media: carpeta para archivos multimedia definitivos.
+- src/components: experiencias, lectores, videos adaptables y escena 3D
+- src/data: asignaturas, trabajos y presentaciones
+- src/styles: diseño responsive
+- public/media y public/academico: archivos locales
+- scripts: preparación de documentos y subida a R2
 
-Los selectores de trabajos, música y video permiten probar archivos locales durante la sesión. No los guardan ni los publican. Para contenido permanente, coloca los archivos en public/media y enlázalos desde los componentes o los datos. Los archivos del HTML original no fueron proporcionados.
+Cinco capítulos reúnen datos personales, mundo académico, realidad virtual y aumentada, IA y robótica, mapa HTML, intereses, recuerdos y proyectos de vida
 
-La música empieza tras una acción del visitante para respetar las políticas de reproducción del navegador. La marquesina respeta la preferencia de movimiento reducido. La foto ambiental de Japón procede de Unsplash y no representa a los estudiantes.
+## Multimedia en Cloudflare R2
+
+1. Crear un bucket R2 Standard con una dirección pública de lectura; para producción se recomienda un dominio propio
+2. Crear credenciales S3 restringidas a lectura y escritura de objetos de ese bucket
+3. Copiar .env.r2.example a .env.r2.local y completar las credenciales únicamente en el archivo local
+4. Ejecutar la simulación y después la subida
+
+```sh
+node scripts/upload-r2.mjs --dry-run
+node scripts/upload-r2.mjs
+```
+
+El script conserva rutas, asigna tipos de archivo, comprueba tamaño y hash registrado, omite archivos sin cambios y permite retomar una subida interrumpida; no borra archivos locales ni remotos
+
+5. Configurar VITE_MEDIA_BASE_URL=https://multimedia.tu-dominio.com en .env.production.local o en las variables del proveedor de despliegue
+6. Ejecutar npm run build y npm run preview, comprobar imágenes, documentos, reproducción y avance de videos
+
+Con una base remota configurada, Vite sustituye las rutas multimedia y excluye public del resultado de producción; sin esa variable, se conserva el funcionamiento local
+
+Las claves R2_* pertenecen al script de subida y nunca deben usar el prefijo VITE_; los archivos con secretos están excluidos de Git
+
+Tras verificar la migración, retirar public/media y public/academico del índice de Git y añadirlos a .gitignore, conservando las copias locales; quitarlos en un nuevo commit no elimina los archivos del historial anterior, cuya limpieza requiere una operación independiente
+
+R2 ofrece una cuota gratuita con límites de almacenamiento y operaciones; consultar las [tarifas vigentes](https://developers.cloudflare.com/r2/pricing/)

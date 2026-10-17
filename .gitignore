@@ -1,4 +1,11 @@
 node_modules/
 dist/
+dist-*/
+.env
+.env.*
+!.env.example
+!.env.r2.example
+tmp/
+preview-*.png
 *.local
 public/media/personal/historia-de-vida.mp4
