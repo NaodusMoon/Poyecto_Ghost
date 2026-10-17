@@ -1,0 +1,71 @@
+[
+  {
+    "id": "laura",
+    "title": "Melo Sánchez Laura",
+    "mp4": "/media/personal/historia-laura.mp4",
+    "webm": "/media/personal/historia-laura.webm",
+    "poster": "/media/personal/historia-laura-poster.jpg",
+    "width": 576,
+    "height": 1024,
+    "moments": [
+      {
+        "time": 20,
+        "src": "/media/personal/recuerdos-laura/20.jpg"
+      },
+      {
+        "time": 80,
+        "src": "/media/personal/recuerdos-laura/80.jpg"
+      },
+      {
+        "time": 140,
+        "src": "/media/personal/recuerdos-laura/140.jpg"
+      }
+    ]
+  },
+  {
+    "id": "tatiana",
+    "title": "Andrade Chaguala Tatiana",
+    "mp4": "/media/personal/historia-tatiana.mp4",
+    "webm": "/media/personal/historia-tatiana.webm",
+    "poster": "/media/personal/historia-tatiana-poster.jpg",
+    "width": 384,
+    "height": 368,
+    "moments": [
+      {
+        "time": 30,
+        "src": "/media/personal/recuerdos-tatiana/30.jpg"
+      },
+      {
+        "time": 150,
+        "src": "/media/personal/recuerdos-tatiana/150.jpg"
+      },
+      {
+        "time": 220,
+        "src": "/media/personal/recuerdos-tatiana/220.jpg"
+      }
+    ]
+  },
+  {
+    "id": "original",
+    "title": "Peña Urquiola Estefani Andreina",
+    "mp4": "/media/personal/historia-original.mp4",
+    "webm": "/media/personal/historia-original.webm",
+    "poster": "/media/personal/historia-original-poster.jpg",
+    "width": 1280,
+    "height": 720,
+    "moments": [
+      {
+        "time": 20,
+        "src": "/media/personal/recuerdos-original/20.jpg"
+      },
+      {
+        "time": 80,
+        "src": "/media/personal/recuerdos-original/80.jpg"
+      },
+      {
+        "time": 145,
+        "src": "/media/personal/recuerdos-original/145.jpg"
+      }
+    ]
+  }
+]

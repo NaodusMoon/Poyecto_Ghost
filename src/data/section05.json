@@ -1,0 +1,93 @@
+{
+  "map": {
+    "id": "mapa-html",
+    "title": "Mapa conceptual HTML",
+    "kind": "map",
+    "pages": [
+      "/media/seccion-05/mapa-html.jpg"
+    ],
+    "original": "/media/seccion-05/mapa-html.jpg",
+    "format": "JPG"
+  },
+  "interest": {
+    "id": "tema-japon",
+    "title": "Cultura japonesa",
+    "kind": "slides",
+    "pages": [
+      "/media/seccion-05/tema-japon/001.webp",
+      "/media/seccion-05/tema-japon/002.webp",
+      "/media/seccion-05/tema-japon/003.webp",
+      "/media/seccion-05/tema-japon/004.webp",
+      "/media/seccion-05/tema-japon/005.webp",
+      "/media/seccion-05/tema-japon/006.webp",
+      "/media/seccion-05/tema-japon/007.webp",
+      "/media/seccion-05/tema-japon/008.webp",
+      "/media/seccion-05/tema-japon/009.webp",
+      "/media/seccion-05/tema-japon/010.webp"
+    ],
+    "original": "/media/seccion-05/tema-japon.pdf",
+    "format": "PDF"
+  },
+  "lives": [
+    {
+      "id": "vida-estefani",
+      "title": "Peña Urquiola Estefani",
+      "kind": "slides",
+      "pages": [
+        "/media/seccion-05/vida-estefani/001.webp",
+        "/media/seccion-05/vida-estefani/002.webp",
+        "/media/seccion-05/vida-estefani/003.webp",
+        "/media/seccion-05/vida-estefani/004.webp",
+        "/media/seccion-05/vida-estefani/005.webp",
+        "/media/seccion-05/vida-estefani/006.webp",
+        "/media/seccion-05/vida-estefani/007.webp",
+        "/media/seccion-05/vida-estefani/008.webp",
+        "/media/seccion-05/vida-estefani/009.webp",
+        "/media/seccion-05/vida-estefani/010.webp",
+        "/media/seccion-05/vida-estefani/011.webp"
+      ],
+      "original": "/media/seccion-05/vida-estefani.pdf",
+      "format": "PDF"
+    },
+    {
+      "id": "vida-tatiana",
+      "title": "Andrade Chaguala Tatiana",
+      "kind": "slides",
+      "pages": [
+        "/media/seccion-05/vida-tatiana/001.webp",
+        "/media/seccion-05/vida-tatiana/002.webp",
+        "/media/seccion-05/vida-tatiana/003.webp",
+        "/media/seccion-05/vida-tatiana/004.webp",
+        "/media/seccion-05/vida-tatiana/005.webp",
+        "/media/seccion-05/vida-tatiana/006.webp",
+        "/media/seccion-05/vida-tatiana/007.webp",
+        "/media/seccion-05/vida-tatiana/008.webp",
+        "/media/seccion-05/vida-tatiana/009.webp",
+        "/media/seccion-05/vida-tatiana/010.webp",
+        "/media/seccion-05/vida-tatiana/011.webp",
+        "/media/seccion-05/vida-tatiana/012.webp"
+      ],
+      "original": "/media/seccion-05/vida-tatiana.pptx",
+      "format": "PowerPoint"
+    },
+    {
+      "id": "vida-laura",
+      "title": "Melo Sánchez Laura",
+      "kind": "slides",
+      "pages": [
+        "/media/seccion-05/vida-laura/001.webp",
+        "/media/seccion-05/vida-laura/002.webp",
+        "/media/seccion-05/vida-laura/003.webp",
+        "/media/seccion-05/vida-laura/004.webp",
+        "/media/seccion-05/vida-laura/005.webp",
+        "/media/seccion-05/vida-laura/006.webp",
+        "/media/seccion-05/vida-laura/007.webp",
+        "/media/seccion-05/vida-laura/008.webp",
+        "/media/seccion-05/vida-laura/009.webp",
+        "/media/seccion-05/vida-laura/010.webp"
+      ],
+      "original": "/media/seccion-05/vida-laura.pdf",
+      "format": "PDF"
+    }
+  ]
+}

@@ -9,7 +9,7 @@ export default function useLocalState(key, initial) {
   const update = next => {
     setValue(next);
     try { localStorage.setItem(key, JSON.stringify(next)); setError(''); }
-    catch { setError('No se pudo guardar en este navegador. Tu cambio sigue disponible durante esta sesión.'); }
+    catch { setError('No se pudo guardar en este navegador; tu cambio sigue disponible durante esta sesión'); }
   };
   return [value, update, error];
 }

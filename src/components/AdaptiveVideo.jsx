@@ -1,0 +1,9 @@
+import React, { useRef, useState } from 'react';
+import { Play, Pause } from 'lucide-react';
+
+export default function AdaptiveVideo({title,webm,mp4,poster,width=16,height=9,mediaRef}){
+ const ref=useRef(null);const [ratio,setRatio]=useState(width/height);const [playing,setPlaying]=useState(false);const [error,setError]=useState('');
+ const toggle=async()=>{const video=ref.current;if(!video)return;if(!video.paused){video.pause();return;}try{setError('');await video.play();}catch{setError('No se pudo iniciar el video; puedes abrir el archivo MP4 desde el enlace');}};
+ const play=()=>{setPlaying(true);document.querySelectorAll('video').forEach(other=>{if(other!==ref.current&&!other.paused)other.pause();});};
+ return <div className={'adaptive-player '+(ratio<.8?'is-portrait':ratio>1.3?'is-landscape':'is-square')} style={{width:`min(100%, ${ratio*68}vh)`,aspectRatio:'auto'}}><div className="adaptive-screen" style={{aspectRatio:ratio}}><video ref={node=>{ref.current=node;if(mediaRef)mediaRef.current=node;}} controls playsInline preload="metadata" poster={poster} aria-label={title} onLoadedMetadata={e=>{const v=e.currentTarget;if(v.videoWidth&&v.videoHeight)setRatio(v.videoWidth/v.videoHeight);}} onPlay={play} onPause={()=>setPlaying(false)} onEnded={()=>setPlaying(false)} onError={()=>setError('No se pudo cargar el video; abre el MP4 para verlo por separado')}><source src={webm} type="video/webm"/><source src={mp4} type="video/mp4"/></video></div><div className="adaptive-controls"><button onClick={toggle} aria-label={(playing?'Pausar: ':'Reproducir: ')+title}>{playing?<Pause size={16}/>:<Play size={16}/>} {playing?'Pausar':'Reproducir'}</button><a href={mp4} target="_blank" rel="noreferrer">Abrir MP4 ↗</a></div>{error&&<p className="adaptive-error" role="alert">{error}</p>}</div>;
+}
