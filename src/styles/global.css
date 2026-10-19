@@ -5,7 +5,7 @@
 @media(max-width:700px){.topline{font-size:7px;padding:9px 5%}.topline span{display:none}header{height:85px;gap:15px}.brand{font-size:21px}.brand-flower{font-size:37px}.header-button{display:none}.mobile-menu{display:block;background:none;margin-left:auto;padding:10px}.site-navigation{display:none;position:absolute;left:5%;right:5%;top:113px;background:#f5f2e8;z-index:30;padding:25px;border:1px solid #b7cbd0;box-shadow:0 15px 20px #173d4818}.site-navigation.open{display:flex;flex-direction:column}.hero{grid-template-columns:1fr}.hero-copy{padding-top:28px}.edition>span:last-child{margin-left:auto}h1{font-size:95px;letter-spacing:-4px;margin-top:26px}.title-star{left:295px;top:70px}.hero-copy>p{font-size:13px}.hero-bottom{padding:23px 0 0;max-width:none}.hero-collage{margin:10px 0 24px;min-height:540px}.photo-frame{left:30px;right:42px;top:40px;bottom:75px}.photo-overlay{font-size:49px}.round-sticker{left:10px;top:17px}.flower-wrap{right:0;top:35px;width:190px;height:190px}.prom-ticket{left:18px;bottom:20px}.handwritten{right:0;bottom:96px}.collage-foot{bottom:0;font-size:14px}.collage-foot span{font-size:5px}.marquee{padding:13px 0}.marquee span{font-size:12px}.marquee b{padding:0 20px}.section{padding:52px 0}.intro{grid-template-columns:1fr;gap:5px}h2{font-size:36px}.intro-text{padding-left:30px;max-width:none}.mini-flower{left:-5px}.section-heading{display:block}.section-heading>p{font-size:12px}.filters{gap:7px;margin-top:25px}.filters button{padding:9px 12px;font-size:10px}.project-grid{grid-template-columns:repeat(2,1fr);gap:26px 14px}.project-art{height:170px}.project-art>span{font-size:100px}.project-meta h3{font-size:13px;line-height:1.5}.project-meta small{font-size:7px}.project-meta p{font-size:10px;line-height:1.5}.memories{grid-template-columns:1fr;gap:25px}.memory-poster{min-height:330px}.memory-copy h2{margin:20px 0}.closing h2{font-size:42px}.closing{padding:42px 5%}footer{flex-wrap:wrap;padding-bottom:90px}footer>span{order:3;width:100%;font-size:6px}.music-control{right:15px;bottom:15px}.modal{padding:40px 24px}.modal h2{font-size:29px}}
 @media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}.marquee>div{animation:none}*,*::before,*::after{transition:none!important}}
 
-/* Contornos suaves para los elementos de la identidad Komorebi. */
+/* Contornos suaves para los elementos de la identidad A través del espejo. */
 .button,.header-button{border-radius:999px}
 .photo-frame{border-radius:26px}
 .photo-frame>img{border-radius:17px}
@@ -140,4 +140,17 @@ html,body{overflow-x:clip}.hero-copy,.hero-collage{min-width:0}.academic-grid>di
 .marquee-phrase-group{display:flex;flex-shrink:0}
 @media(max-width:700px){
   .hero-collage .handwritten,.hero-collage .prom-ticket{display:none}
+}
+
+/* Long page name adapts to the available header width. */
+header .brand{font-size:clamp(16px,1.7vw,24px);letter-spacing:-.5px;flex-shrink:0}
+header .brand>span:last-child{max-width:250px;line-height:1.15}
+.collage-foot{font-size:13px;flex-wrap:wrap;justify-content:flex-end}
+footer .brand{font-size:16px}
+@media(max-width:700px){
+  header .brand{font-size:clamp(14px,4vw,21px);flex-shrink:1;min-width:0}
+  header .brand>span:last-child{max-width:220px}
+  header .brand small{font-size:7px;letter-spacing:1.5px}
+  .mobile-menu{flex-shrink:0}
+  .collage-foot{font-size:11px;text-align:right}
 }

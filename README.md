@@ -1,4 +1,4 @@
-# KOMOREBI · Prom 2026
+# A TRAVÉS DEL ESPEJO · Prom 2026
 
 Anuario digital en React, Vite y Three.js; identidad en azul petróleo, crema y cobre
 
