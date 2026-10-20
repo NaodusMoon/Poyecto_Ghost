@@ -154,3 +154,9 @@ footer .brand{font-size:16px}
   .mobile-menu{flex-shrink:0}
   .collage-foot{font-size:11px;text-align:right}
 }
+
+@media(max-width:700px){
+  .stories-intro>.eyebrow{font-size:14px;line-height:1.6;letter-spacing:1px}
+  .selected-profile .profile-media>.profile-cv{grid-row:1}
+  .selected-profile .profile-media>.profile-video{grid-row:2}
+}
