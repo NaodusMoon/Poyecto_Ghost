@@ -160,3 +160,9 @@ footer .brand{font-size:16px}
   .selected-profile .profile-media>.profile-cv{grid-row:1}
   .selected-profile .profile-media>.profile-video{grid-row:2}
 }
+@media(max-width:700px){
+  .hero-collage .photo-overlay,
+  .hero-collage .photo-caption,
+  .hero-collage .collage-foot{display:none}
+  .hero-collage .photo-frame{padding-bottom:0}
+}
