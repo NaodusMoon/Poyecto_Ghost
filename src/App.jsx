@@ -4,6 +4,7 @@ import FlowerScene from './components/FlowerScene';
 import ProjectLibrary from './components/ProjectLibrary';
 import ChapterMap from './components/ChapterMap';
 import Marquee from './components/Marquee';
+import BackgroundMusic from './components/BackgroundMusic';
 
 const photo = '/media/personal/portada-prom-completa.jpg';
 export default function App() {
@@ -20,6 +21,7 @@ export default function App() {
     <section className="closing"><h2>Sigamos <em>floreciendo</em> ✳</h2><a href="#inicio">Volver al comienzo ↗</a></section><Marquee/></main>
     <footer><a href="#" className="brand">✳ A TRAVÉS DEL ESPEJO</a><span>UN ARCHIVO DE LO QUE FUIMOS; UNA PISTA DE LO QUE SEREMOS</span><small>PROM 2026 ©</small></footer>
 
+    <BackgroundMusic/>
   </>;
 }
 

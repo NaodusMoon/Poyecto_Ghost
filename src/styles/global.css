@@ -169,3 +169,7 @@ footer .brand{font-size:16px}
 
 .hero-bottom{justify-content:flex-end}
 .work-bottom{justify-content:flex-end}
+
+.background-music{position:fixed;bottom:18px;right:18px;z-index:40}
+.background-music button{display:flex;align-items:center;gap:9px;min-width:44px;min-height:44px;padding:12px 16px;border:1px solid #9cb6bd;border-radius:999px;background:#faf8ed;color:#183e49;box-shadow:0 3px 12px #183e4918;font-size:11px}
+@media(max-width:700px){.background-music{bottom:12px;right:12px}.background-music button{padding:12px}.background-music button span{display:none}}
