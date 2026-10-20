@@ -14,7 +14,7 @@ export default function BackgroundMusic() {
     const track = audio.current;
     let disposed = false;
     track.volume = 0.3;
-    const hasVideo = () => [...document.querySelectorAll('video')].some(v => !v.paused && !v.ended);
+    const hasVideo = () => [...document.querySelectorAll('video:not([data-keep-background-music])')].some(v => !v.paused && !v.ended);
     const update = async () => {
       if (disposed) return;
       const busy = hasVideo();

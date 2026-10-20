@@ -178,3 +178,22 @@ footer .brand{font-size:16px}
 .hero-video{grid-column:1/-1;display:flex;justify-content:center;padding:15px 0 40px;min-width:0}
 .hero-video video{display:block;width:min(100%,360px);height:auto;aspect-ratio:9/16;object-fit:contain;background:#102d37;border-radius:22px}
 @media(max-width:700px){.hero-video{padding:0 0 28px}.hero-video video{width:min(100%,360px);border-radius:16px}}
+
+/* Desktop cover: copy, photo and welcome film share one balanced composition. */
+@media(min-width:1000px){
+  .hero{grid-template-columns:minmax(0,1fr) minmax(0,1.15fr) minmax(0,.55fr);gap:24px;align-items:center;min-height:660px;padding-block:25px}
+  .hero-copy{padding-top:0}
+  .hero h1{font-size:clamp(62px,6.1vw,98px);letter-spacing:-3px}
+  .hero .title-star{left:auto;right:0;top:30%;font-size:55px}
+  .hero-copy>p{font-size:12px}.hero-copy>p br{display:none}
+  .hero-collage{margin:15px 0;min-height:560px;width:100%}
+  .hero .photo-frame{left:12px;right:20px;top:45px;bottom:90px;transform:rotate(-3deg)}
+  .hero .photo-overlay{font-size:clamp(28px,3vw,46px);left:15px}
+  .hero .flower-wrap{width:125px;height:125px;right:-8px;top:30px}
+  .hero .round-sticker{width:80px;height:80px;font-size:6px;left:0;top:10px}.hero .round-sticker b{font-size:29px}
+  .hero .prom-ticket{width:105px;padding:12px 15px;bottom:45px}.hero .prom-ticket strong{font-size:40px}
+  .hero .handwritten{font-size:18px;bottom:100px}
+  .hero .collage-foot{font-size:10px;gap:7px}
+  .hero-video{grid-column:3;grid-row:1;padding:0;align-self:center}
+  .hero-video video{width:100%;max-height:500px;border:6px solid #fffdf4;box-shadow:0 10px 30px #183e4918;border-radius:20px}
+}
