@@ -50,27 +50,6 @@
       "format": "PDF"
     },
     {
-      "id": "vida-tatiana",
-      "title": "Andrade Chaguala Tatiana",
-      "kind": "slides",
-      "pages": [
-        "/media/seccion-05/vida-tatiana/001.webp",
-        "/media/seccion-05/vida-tatiana/002.webp",
-        "/media/seccion-05/vida-tatiana/003.webp",
-        "/media/seccion-05/vida-tatiana/004.webp",
-        "/media/seccion-05/vida-tatiana/005.webp",
-        "/media/seccion-05/vida-tatiana/006.webp",
-        "/media/seccion-05/vida-tatiana/007.webp",
-        "/media/seccion-05/vida-tatiana/008.webp",
-        "/media/seccion-05/vida-tatiana/009.webp",
-        "/media/seccion-05/vida-tatiana/010.webp",
-        "/media/seccion-05/vida-tatiana/011.webp",
-        "/media/seccion-05/vida-tatiana/012.webp"
-      ],
-      "original": "/media/seccion-05/vida-tatiana.pptx",
-      "format": "PowerPoint"
-    },
-    {
       "id": "vida-laura",
       "title": "Melo Sánchez Laura",
       "kind": "slides",

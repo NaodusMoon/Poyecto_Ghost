@@ -10,5 +10,5 @@ export const projects = [
   { title: 'Cómic de robótica', category: 'Informática', label: 'Tecnología entre viñetas', file: 'comic robotica.pdf', icon: '☆', asset: {url:'/media/seccion-04/comic-robotica.pdf',name:'Cómic de robótica.pdf',type:'application/pdf',preview:'/media/seccion-04/comic-robotica/001.webp'} },
   { title: 'Mapa conceptual HTML', category: 'Informática', label: 'Así se conecta la web', file: 'mapa html.jpg', icon: '↔', asset:{url:'/media/seccion-05/mapa-html.jpg',name:'Mapa conceptual HTML.jpg',type:'image/jpeg'} },
   { title: 'Temas de interés', category: 'Inspiración', label: 'Lo que nos mueve', file: 'tema de interes.pdf', icon: '♡', asset:{url:'/media/seccion-05/tema-japon.pdf',name:'Cultura japonesa.pdf',type:'application/pdf',preview:'/media/seccion-05/tema-japon/001.webp'} },
-  { title: 'Proyecto de vida', category: 'Inspiración', label: 'Todavía nos queda tanto', file: 'proyecto de vida.pptx', icon: '↗', asset:{url:'/media/seccion-05/vida-tatiana.pptx',name:'Proyecto de vida.pptx',type:'application/vnd.openxmlformats-officedocument.presentationml.presentation'} },
+  { title: 'Proyecto de vida', category: 'Inspiración', label: 'Todavía nos queda tanto', file: 'proyecto de vida.pdf', icon: '↗', asset:{url:'/media/seccion-05/vida-estefani.pdf',name:'Proyecto de vida.pdf',type:'application/pdf'} },
 ];

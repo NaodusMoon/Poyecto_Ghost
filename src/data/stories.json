@@ -23,29 +23,6 @@
     ]
   },
   {
-    "id": "tatiana",
-    "title": "Andrade Chaguala Tatiana",
-    "mp4": "/media/personal/historia-tatiana.mp4",
-    "webm": "/media/personal/historia-tatiana.webm",
-    "poster": "/media/personal/historia-tatiana-poster.jpg",
-    "width": 384,
-    "height": 368,
-    "moments": [
-      {
-        "time": 30,
-        "src": "/media/personal/recuerdos-tatiana/30.jpg"
-      },
-      {
-        "time": 150,
-        "src": "/media/personal/recuerdos-tatiana/150.jpg"
-      },
-      {
-        "time": 220,
-        "src": "/media/personal/recuerdos-tatiana/220.jpg"
-      }
-    ]
-  },
-  {
     "id": "original",
     "title": "Peña Urquiola Estefani Andreina",
     "mp4": "/media/personal/historia-original.mp4",
